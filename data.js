@@ -13,7 +13,7 @@ const showroomConfig = {
   name: "ANIL KUMAR MANISH KUMAR TILES SHOWROOM",
   businessType: "Retailer",
   tagline: "Tiles, Sanitaryware & Paints Retailer",
-  
+
   // Exact Client Contact Information
   contacts: {
     primaryPhone: "9350444783",
@@ -164,15 +164,6 @@ const showroomBrands = [
     logoAlt: "Kajaria Official Logo"
   },
   {
-    id: "somany",
-    name: "Somany",
-    category: "Tiles & Bathware",
-    isPrimary: false,
-    logoType: "image",
-    logoSrc: "assets/logos/somany_logo.jpg",
-    logoAlt: "Somany Official Logo"
-  },
-  {
     id: "jaquar",
     name: "Jaquar",
     category: "Bath Fittings & Sanitaryware",
@@ -182,13 +173,67 @@ const showroomBrands = [
     logoAlt: "Jaquar Official Logo"
   },
   {
-    id: "cera",
-    name: "Cera",
-    category: "Sanitaryware",
+    id: "aplapollo",
+    name: "APL Apollo",
+    category: "Steel Pipes",
     isPrimary: false,
     logoType: "image",
-    logoSrc: "assets/logos/cera_logo.jpg",
-    logoAlt: "Cera Official Logo"
+    logoSrc: "assets/logos/aplapollo_logo.jpg",
+    logoAlt: "APL Apollo Official Logo"
+  },
+  {
+    id: "astral",
+    name: "Astral Pipes",
+    category: "Pipes & Fittings",
+    isPrimary: false,
+    logoType: "image",
+    logoSrc: "assets/logos/astral pipes logo.jpg",
+    logoAlt: "Astral Pipes Official Logo"
+  },
+  {
+    id: "prabhat",
+    name: "Prabhat",
+    category: "Pipes & Tanks",
+    isPrimary: false,
+    logoType: "image",
+    logoSrc: "assets/logos/prabhat logo.png",
+    logoAlt: "Prabhat Official Logo"
+  },
+  {
+    id: "cravo",
+    name: "Cravo",
+    category: "Tiles & Bathware",
+    isPrimary: false,
+    logoType: "image",
+    logoSrc: "assets/logos/cravo logo.jpg",
+    logoAlt: "Cravo Official Logo"
+  },
+  {
+    id: "coats",
+    name: "Coats",
+    category: "Pipes & Fittings",
+    isPrimary: false,
+    logoType: "image",
+    logoSrc: "assets/logos/coats logo.jpg",
+    logoAlt: "Coats Official Logo"
+  },
+  {
+    id: "kamdhenu",
+    name: "Kamdhenu",
+    category: "Building Materials",
+    isPrimary: false,
+    logoType: "image",
+    logoSrc: "assets/logos/kamdhenu logo.jpg",
+    logoAlt: "Kamdhenu Official Logo"
+  },
+  {
+    id: "sakrni",
+    name: "Sakarni",
+    category: "Plaster & Wall Putty",
+    isPrimary: false,
+    logoType: "image",
+    logoSrc: "assets/logos/sakrni logo.jpg",
+    logoAlt: "Sakarni Official Logo"
   }
 ];
 
