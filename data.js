@@ -187,7 +187,7 @@ const showroomBrands = [
     category: "Pipes & Fittings",
     isPrimary: false,
     logoType: "image",
-    logoSrc: "assets/logos/astral pipes logo.jpg",
+    logoSrc: "assets/logos/astral_pipes_logo.jpg",
     logoAlt: "Astral Pipes Official Logo"
   },
   {
@@ -205,7 +205,7 @@ const showroomBrands = [
     category: "Tiles & Bathware",
     isPrimary: false,
     logoType: "image",
-    logoSrc: "assets/logos/cravo logo.jpg",
+    logoSrc: "assets/logos/cravo_logo.jpg",
     logoAlt: "Cravo Official Logo"
   },
   {
@@ -259,7 +259,7 @@ const showroomBrands = [
     category: "Plaster & Wall Putty",
     isPrimary: false,
     logoType: "image",
-    logoSrc: "assets/logos/sakrni logo.jpg",
+    logoSrc: "assets/logos/sakarni_logo.jpg",
     logoAlt: "Sakarni Official Logo"
   }
 ];
