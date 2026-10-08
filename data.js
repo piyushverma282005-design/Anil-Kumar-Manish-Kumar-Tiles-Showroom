@@ -34,9 +34,9 @@ const showroomConfig = {
     whatsapp: "https://wa.me/919350444783",
     whatsappGeneral: "https://wa.me/919350444783?text=Hello%20ANIL%20KUMAR%20MANISH%20KUMAR%20TILES%20SHOWROOM%2C%20I%20am%20interested%20in%20tiles%20and%20sanitaryware.",
     emailMailto: "mailto:mannuchauhan13@gmail.com?subject=Enquiry%20-%20ANIL%20KUMAR%20MANISH%20KUMAR%20TILES%20SHOWROOM",
-    // Google Maps: Based on location "Jatauli Mandi Under Fly Over, Gurugram, Haryana" (No invented pins)
-    googleMapsDirections: "https://www.google.com/maps/search/?api=1&query=Jatauli+Mandi+Under+Fly+Over%2C+Gurugram%2C+Haryana",
-    googleMapsEmbed: "https://maps.google.com/maps?q=Jatauli+Mandi+Under+Fly+Over%2C+Gurugram%2C+Haryana&t=&z=14&ie=UTF8&iwloc=&output=embed",
+    // Exact Verified Google Maps Location
+    googleMapsDirections: "https://maps.app.goo.gl/NtGb8uakW4URSDrq5?g_st=iwb",
+    googleMapsEmbed: "https://maps.google.com/maps?q=ward+no+15%2C+Anil+kumar+Manish+kumar+Marble%2CTiles+Show+room%2C+Jatauli+Mandi%2C+near+water+suplly%2C+Haileymandi%2C+Haryana+122504&t=&z=16&ie=UTF8&iwloc=&output=embed",
     // Exact Verified Social Media Profiles
     instagram: "https://www.instagram.com/anilkumarmanishkumar.3720/",
     facebook: "https://www.facebook.com/share/1EkNHfq69N/",
@@ -191,13 +191,13 @@ const showroomBrands = [
     logoAlt: "Astral Pipes Official Logo"
   },
   {
-    id: "prabhat",
-    name: "Prabhat",
+    id: "astral-tanks",
+    name: "Astral Water Tanks",
     category: "Pipes & Tanks",
     isPrimary: false,
     logoType: "image",
-    logoSrc: "assets/logos/prabhat logo.png",
-    logoAlt: "Prabhat Official Logo"
+    logoSrc: "assets/logos/astral_tanks_logo.jpg",
+    logoAlt: "Astral Water Tanks"
   },
   {
     id: "cravo",
@@ -209,22 +209,49 @@ const showroomBrands = [
     logoAlt: "Cravo Official Logo"
   },
   {
-    id: "coats",
-    name: "Coats",
-    category: "Pipes & Fittings",
+    id: "kamdhenu-paints",
+    name: "Kamdhenu Paints",
+    category: "Paints & Finishes",
     isPrimary: false,
     logoType: "image",
-    logoSrc: "assets/logos/coats logo.jpg",
-    logoAlt: "Coats Official Logo"
+    logoSrc: "assets/logos/kamdhenu_paints_logo.jpg",
+    logoAlt: "Kamdhenu Paints Official Logo"
   },
   {
-    id: "kamdhenu",
-    name: "Kamdhenu",
-    category: "Building Materials",
+    id: "kerovit",
+    name: "Kerovit",
+    category: "Sanitaryware & Bathware",
     isPrimary: false,
     logoType: "image",
-    logoSrc: "assets/logos/kamdhenu logo.jpg",
-    logoAlt: "Kamdhenu Official Logo"
+    logoSrc: "assets/logos/kerovit_logo.jpg",
+    logoAlt: "Kerovit Official Logo"
+  },
+  {
+    id: "astral-bathware",
+    name: "Astral Bathware",
+    category: "Bath Fittings & Sanitaryware",
+    isPrimary: false,
+    logoType: "image",
+    logoSrc: "assets/logos/astral_bathware_logo.jpg",
+    logoAlt: "Astral Bathware Official Logo"
+  },
+  {
+    id: "coats",
+    name: "Coats",
+    category: "Bath Fittings & Accessories",
+    isPrimary: false,
+    logoType: "image",
+    logoSrc: "assets/logos/coats_logo.jpg",
+    logoAlt: "Coats Bath Fittings & Accessories"
+  },
+  {
+    id: "sakarni-adhesives",
+    name: "Sakarni Tile Adhesive",
+    category: "Tile Adhesives",
+    isPrimary: false,
+    logoType: "image",
+    logoSrc: "assets/logos/sakarni_adhesive_logo.jpg",
+    logoAlt: "Sakarni Tile Adhesive"
   },
   {
     id: "sakrni",

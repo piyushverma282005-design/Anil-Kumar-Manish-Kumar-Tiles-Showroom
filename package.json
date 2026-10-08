@@ -1,0 +1,13 @@
+{
+  "name": "anil-kumar-manish-kumar-tiles-showroom",
+  "version": "1.0.0",
+  "description": "Website for ANIL KUMAR MANISH KUMAR TILES SHOWROOM",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  }
+}
