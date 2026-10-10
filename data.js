@@ -261,6 +261,15 @@ const showroomBrands = [
     logoType: "image",
     logoSrc: "assets/logos/sakarni_logo.jpg",
     logoAlt: "Sakarni Official Logo"
+  },
+  {
+    id: "polycab",
+    name: "Polycab",
+    category: "Wires & Cables",
+    isPrimary: false,
+    logoType: "image",
+    logoSrc: "assets/logos/polycab_logo.jpg",
+    logoAlt: "Polycab Official Logo"
   }
 ];
 
