@@ -101,7 +101,8 @@ function setupMobileNav() {
 
 function renderCategories() {
   const container = document.getElementById("categories-grid");
-  if (!container || !Array.isArray(productCategories)) return;
+  // Only render if container is empty to prevent overwriting Vite's pre-rendered hashed image paths
+  if (!container || container.children.length > 0 || !Array.isArray(productCategories)) return;
 
   container.innerHTML = productCategories.map(cat => {
     const waText = encodeURIComponent(`Hello, I am interested in ${cat.name}.`);
@@ -126,7 +127,8 @@ function renderCategories() {
 
 function renderBrands() {
   const container = document.getElementById("brands-grid");
-  if (!container || !Array.isArray(showroomBrands)) return;
+  // Only render if container is empty to prevent overwriting Vite's pre-rendered hashed image paths
+  if (!container || container.children.length > 0 || !Array.isArray(showroomBrands)) return;
 
   container.innerHTML = showroomBrands.map(brand => {
     if (brand.logoType === "image") {
@@ -149,7 +151,7 @@ function renderBrands() {
 
 function renderFeatures() {
   const container = document.getElementById("about-features-container");
-  if (!container || !Array.isArray(showroomFeatures)) return;
+  if (!container || container.children.length > 0 || !Array.isArray(showroomFeatures)) return;
 
   container.innerHTML = showroomFeatures.map(item => {
     return `
