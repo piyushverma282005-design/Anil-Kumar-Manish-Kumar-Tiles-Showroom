@@ -40,7 +40,7 @@ The website functions as a clean, digital product catalog and instant lead gener
 - **💬 Direct WhatsApp Inquiries**: Dynamic product cards pre-populate WhatsApp messages with specific category inquiries (e.g., *"Hello, I am interested in Floor Tiles"*).
 - **🗺️ Interactive Google Maps Integration**: Embedded map and direct GPS directions pointing straight to the showroom under the Jatauli Mandi Flyover in Gurugram.
 - **🖼️ Curated Visual Galleries**: High-resolution showcase spaces covering living rooms, modern bathrooms, kitchens, and outdoor patio designs.
-- **🤝 Brand Partner Showcase**: Interactive badges for premium manufacturer brands including Mehak, Indigo Paints, Kajaria, Jaquar, APL Apollo, Astral Pipes, Astral Water Tanks, Kerovit, Astral Bathware, Coats, Sakarni Tile Adhesive, Cravo, Kamdhenu Paints, and Sakarni.
+- **🤝 Brand Partner Showcase**: Interactive badges for premium manufacturer brands including Mehak, Indigo Paints, Kajaria, Jaquar, APL Apollo, Astral Pipes, Astral Water Tanks, Kerovit, Astral Bathware, Coats, Sakarni Tile Adhesive, Cravo, Kamdhenu Paints, Sakarni, and Polycab.
 - **📞 Multi-Channel Contact Hub**: One-tap phone dialing, instant WhatsApp chat floating action button (FAB), and email triggers.
 - **🌐 Accessible & SEO-Ready**: Semantic HTML5 markup, meta descriptions, descriptive image alt text, and FontAwesome icons.
 
@@ -97,6 +97,7 @@ The showroom partners with India's leading manufacturers:
 - **Coats** *(Bath Fittings & Accessories)*
 - **Sakarni Tile Adhesive** *(Tile Adhesives)*
 - **Sakarni** *(Plaster of Paris & Wall Putty)*
+- **Polycab** *(Wires & Cables)*
 
 ---
 
@@ -133,6 +134,7 @@ Anil-Kumar-Manish-Kumar-Tiles-Showroom/
 │       ├── cravo logo.jpg          # Cravo logo
 │       ├── kamdhenu_paints_logo.jpg# Kamdhenu Paints logo
 │       ├── kerovit_logo.jpg        # Kerovit Bathrooms
+│       ├── polycab_logo.jpg        # Polycab Wires & Cables
 │       ├── sakarni_adhesive_logo.jpg# Sakarni Tile Adhesive
 │       └── sakrni logo.jpg         # Sakarni logo
 ├── index.html                      # Semantic single-page HTML layout
