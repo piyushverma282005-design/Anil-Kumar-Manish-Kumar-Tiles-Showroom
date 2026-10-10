@@ -328,3 +328,13 @@ const showroomFaqs = [
     answer: "Yes, you can click any of the WhatsApp buttons on this website to chat directly with us on WhatsApp."
   }
 ];
+
+if (typeof window !== "undefined") {
+  window.showroomConfig = showroomConfig;
+  window.productCategories = productCategories;
+  window.showroomBrands = showroomBrands;
+  window.showroomFeatures = showroomFeatures;
+  window.showroomFaqs = showroomFaqs;
+}
+
+export { showroomConfig, productCategories, showroomBrands, showroomFeatures, showroomFaqs };

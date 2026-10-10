@@ -49,8 +49,9 @@
         <a href="#contact" class="btn btn-outline btn-sm">Get Directions</a>
       </div>
 
-      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></button>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu" onclick="window.toggleMobileNav && window.toggleMobileNav()"><i class="fa-solid fa-bars"></i></button>
     </div>
+    <div class="nav-backdrop" id="nav-backdrop"></div>
   </header>
 
   <!-- HERO -->
@@ -514,7 +515,6 @@
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 </html>

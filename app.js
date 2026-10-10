@@ -4,18 +4,26 @@
  * ==============================================================================
  */
 
+import {
+  showroomConfig,
+  productCategories,
+  showroomBrands,
+  showroomFeatures,
+  showroomFaqs
+} from "./data.js";
+
+function initApp() {
+  setYear();
+  setupMobileNav();
+  renderCategories();
+  renderBrands();
+  renderFeatures();
+}
+
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", initApp);
 } else {
   initApp();
-}
-
-function initApp() {
-  setYear();
-  renderCategories();
-  renderBrands();
-  renderFeatures();
-  setupMobileNav();
 }
 
 function setYear() {
@@ -23,9 +31,77 @@ function setYear() {
   if (el) el.textContent = new Date().getFullYear();
 }
 
+export function toggleMobileNav(forceClose = false) {
+  const toggle = document.getElementById("mobile-toggle");
+  const navMenu = document.getElementById("nav-menu");
+  const backdrop = document.getElementById("nav-backdrop");
+
+  if (!navMenu) return;
+
+  const willBeOpen = forceClose ? false : !navMenu.classList.contains("open");
+
+  if (willBeOpen) {
+    navMenu.classList.add("open");
+    if (backdrop) backdrop.classList.add("open");
+    document.body.classList.add("menu-open");
+    if (toggle) {
+      toggle.setAttribute("aria-expanded", "true");
+      const icon = toggle.querySelector("i");
+      if (icon) icon.className = "fa-solid fa-xmark";
+    }
+  } else {
+    navMenu.classList.remove("open");
+    if (backdrop) backdrop.classList.remove("open");
+    document.body.classList.remove("menu-open");
+    if (toggle) {
+      toggle.setAttribute("aria-expanded", "false");
+      const icon = toggle.querySelector("i");
+      if (icon) icon.className = "fa-solid fa-bars";
+    }
+  }
+}
+
+// Attach to window so inline onclick works as a direct fallback
+if (typeof window !== "undefined") {
+  window.toggleMobileNav = toggleMobileNav;
+}
+
+function setupMobileNav() {
+  const toggle = document.getElementById("mobile-toggle");
+  const navMenu = document.getElementById("nav-menu");
+  const backdrop = document.getElementById("nav-backdrop");
+
+  if (toggle) {
+    toggle.onclick = (e) => {
+      e.preventDefault();
+      toggleMobileNav();
+    };
+  }
+
+  if (backdrop) {
+    backdrop.onclick = () => {
+      toggleMobileNav(true);
+    };
+  }
+
+  if (navMenu) {
+    navMenu.querySelectorAll(".nav-link").forEach(link => {
+      link.onclick = () => {
+        toggleMobileNav(true);
+      };
+    });
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      toggleMobileNav(true);
+    }
+  });
+}
+
 function renderCategories() {
   const container = document.getElementById("categories-grid");
-  if (!container) return;
+  if (!container || !Array.isArray(productCategories)) return;
 
   container.innerHTML = productCategories.map(cat => {
     const waText = encodeURIComponent(`Hello, I am interested in ${cat.name}.`);
@@ -50,7 +126,7 @@ function renderCategories() {
 
 function renderBrands() {
   const container = document.getElementById("brands-grid");
-  if (!container) return;
+  if (!container || !Array.isArray(showroomBrands)) return;
 
   container.innerHTML = showroomBrands.map(brand => {
     if (brand.logoType === "image") {
@@ -73,7 +149,7 @@ function renderBrands() {
 
 function renderFeatures() {
   const container = document.getElementById("about-features-container");
-  if (!container) return;
+  if (!container || !Array.isArray(showroomFeatures)) return;
 
   container.innerHTML = showroomFeatures.map(item => {
     return `
@@ -86,21 +162,4 @@ function renderFeatures() {
       </div>
     `;
   }).join("");
-}
-
-function setupMobileNav() {
-  const toggle = document.getElementById("mobile-toggle");
-  const navMenu = document.getElementById("nav-menu");
-
-  if (!toggle || !navMenu) return;
-
-  toggle.addEventListener("click", () => {
-    navMenu.classList.toggle("open");
-  });
-
-  navMenu.querySelectorAll(".nav-link").forEach(link => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("open");
-    });
-  });
 }
